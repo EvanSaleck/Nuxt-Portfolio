@@ -1,72 +1,133 @@
+<script setup lang="ts">
+const { t } = useI18n()
+const localePath = useLocalePath()
+
+useSeoMeta({
+  title: () => t('seo.title'),
+  description: () => t('seo.description')
+})
+
+const skills = [
+  { name: 'Nuxt', icon: 'i-simple-icons-nuxtdotjs' },
+  { name: 'Vue', icon: 'i-simple-icons-vuedotjs' },
+  { name: 'TypeScript', icon: 'i-simple-icons-typescript' },
+  { name: 'Node.js', icon: 'i-simple-icons-nodedotjs' },
+  { name: 'Tailwind CSS', icon: 'i-simple-icons-tailwindcss' },
+  { name: 'PostgreSQL', icon: 'i-simple-icons-postgresql' }
+]
+</script>
+
 <template>
   <div>
+    <!-- Hero Section -->
     <UPageHero
-      title="Nuxt Starter Template"
-      description="A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours."
-      :links="[{
-        label: 'Get started',
-        to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
-        target: '_blank',
-        trailingIcon: 'i-lucide-arrow-right',
-        size: 'xl'
-      }, {
-        label: 'Use this template',
-        to: 'https://github.com/nuxt-ui-templates/starter',
-        target: '_blank',
-        icon: 'i-simple-icons-github',
-        size: 'xl',
-        color: 'neutral',
-        variant: 'subtle'
-      }]"
-    />
+      orientation="horizontal"
+      :ui="{ container: 'py-24 sm:py-32' }"
+    >
+      <template #title>
+        <span class="text-muted text-2xl font-medium block mb-2">{{ t('hero.greeting') }}</span>
+        <span class="text-primary">{{ t('hero.name') }}</span>
+        <br>
+        <span>{{ t('hero.title') }}</span>
+      </template>
 
+      <template #description>
+        {{ t('hero.subtitle') }}
+      </template>
+
+      <template #links>
+        <UButton
+          :to="localePath('/projects')"
+          size="xl"
+          trailing-icon="i-lucide-arrow-right"
+        >
+          {{ t('hero.cta_primary') }}
+        </UButton>
+        <UButton
+          :to="localePath('/contact')"
+          size="xl"
+          color="neutral"
+          variant="subtle"
+          icon="i-lucide-mail"
+        >
+          {{ t('hero.cta_secondary') }}
+        </UButton>
+      </template>
+
+      <template #default>
+        <div class="flex items-center justify-center size-full">
+          <div class="relative size-72">
+            <div class="absolute inset-0 rounded-full bg-primary/10 animate-pulse" />
+            <div class="absolute inset-4 rounded-full bg-primary/15 flex items-center justify-center">
+              <UIcon name="i-lucide-code-2" class="size-24 text-primary" />
+            </div>
+          </div>
+        </div>
+      </template>
+    </UPageHero>
+
+    <!-- Skills Bar -->
+    <div class="border-y border-default bg-muted/30 py-6">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap items-center justify-center gap-6">
+          <div
+            v-for="skill in skills"
+            :key="skill.name"
+            class="flex items-center gap-2 text-muted hover:text-default transition-colors"
+          >
+            <UIcon :name="skill.icon" class="size-5" />
+            <span class="text-sm font-medium">{{ skill.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features / What I offer -->
     <UPageSection
       id="features"
-      title="Everything you need to build modern Nuxt apps"
-      description="Start with a solid foundation. This template includes all the essentials for building production-ready applications with Nuxt UI's powerful component system."
+      :title="t('about.skills_title')"
       :features="[{
-        icon: 'i-lucide-rocket',
-        title: 'Production-ready from day one',
-        description: 'Pre-configured with TypeScript, ESLint, Tailwind CSS, and all the best practices. Focus on building features, not setting up tooling.'
+        icon: 'i-lucide-layout',
+        title: 'Front-End Development',
+        description: 'Building modern, responsive UIs with Vue 3 & Nuxt 3, Tailwind CSS and a focus on performance and accessibility.'
       }, {
-        icon: 'i-lucide-palette',
-        title: 'Beautiful by default',
-        description: 'Leveraging Nuxt UI\'s design system with automatic dark mode, consistent spacing, and polished components that look great out of the box.'
+        icon: 'i-lucide-server',
+        title: 'Back-End Development',
+        description: 'Designing scalable REST APIs and server-side logic using Node.js, Express and PostgreSQL.'
+      }, {
+        icon: 'i-lucide-smartphone',
+        title: 'Responsive Design',
+        description: 'Creating pixel-perfect, mobile-first interfaces that look great on any device or screen size.'
+      }, {
+        icon: 'i-lucide-globe',
+        title: 'Internationalisation',
+        description: 'Implementing multilingual support with @nuxtjs/i18n so your app reaches a global audience.'
       }, {
         icon: 'i-lucide-zap',
-        title: 'Lightning fast',
-        description: 'Optimized for performance with SSR/SSG support, automatic code splitting, and edge-ready deployment. Your users will love the speed.'
+        title: 'Performance Optimisation',
+        description: 'SSR, SSG, lazy loading and code splitting to deliver fast load times and great Core Web Vitals.'
       }, {
-        icon: 'i-lucide-blocks',
-        title: '100+ components included',
-        description: 'Access Nuxt UI\'s comprehensive component library. From forms to navigation, everything is accessible, responsive, and customizable.'
-      }, {
-        icon: 'i-lucide-code-2',
-        title: 'Developer experience first',
-        description: 'Auto-imports, hot module replacement, and TypeScript support. Write less boilerplate and ship more features.'
-      }, {
-        icon: 'i-lucide-shield-check',
-        title: 'Built for scale',
-        description: 'Enterprise-ready architecture with proper error handling, SEO optimization, and security best practices built-in.'
+        icon: 'i-lucide-git-branch',
+        title: 'Clean Architecture',
+        description: 'Writing maintainable, well-tested code following industry best practices and SOLID principles.'
       }]"
     />
 
+    <!-- CTA -->
     <UPageSection>
       <UPageCTA
-        title="Ready to build your next Nuxt app?"
-        description="Join thousands of developers building with Nuxt and Nuxt UI. Get this template and start shipping today."
+        :title="t('hero.cta_primary')"
+        :description="t('hero.subtitle')"
         variant="subtle"
         :links="[{
-          label: 'Start building',
-          to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
-          target: '_blank',
+          label: t('projects.page_title'),
+          to: localePath('/projects'),
           trailingIcon: 'i-lucide-arrow-right',
-          color: 'neutral'
+          color: 'primary'
         }, {
-          label: 'View on GitHub',
-          to: 'https://github.com/nuxt-ui-templates/starter',
-          target: '_blank',
-          icon: 'i-simple-icons-github',
+          label: t('nav.contact'),
+          to: localePath('/contact'),
+          icon: 'i-lucide-mail',
           color: 'neutral',
           variant: 'outline'
         }]"

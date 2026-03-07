@@ -1,4 +1,6 @@
-<script setup>
+<script setup lang="ts">
+const { t, locale } = useI18n()
+
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -7,40 +9,43 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: locale
   }
 })
 
-const title = 'Nuxt Starter Template'
-const description = 'A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.'
-
 useSeoMeta({
-  title,
-  description,
-  ogTitle: title,
-  ogDescription: description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
+  title: () => t('seo.title'),
+  description: () => t('seo.description'),
+  ogTitle: () => t('seo.title'),
+  ogDescription: () => t('seo.description'),
   twitterCard: 'summary_large_image'
 })
+
+const navLinks = computed(() => [
+  { label: t('nav.home'), to: localePath('/') },
+  { label: t('nav.about'), to: localePath('/about') },
+  { label: t('nav.projects'), to: localePath('/projects') },
+  { label: t('nav.contact'), to: localePath('/contact') }
+])
+
+const localePath = useLocalePath()
 </script>
 
 <template>
   <UApp>
-    <UHeader>
+    <UHeader :links="navLinks">
       <template #left>
-        <NuxtLink to="/">
-          <AppLogo class="w-auto h-6 shrink-0" />
+        <NuxtLink :to="localePath('/')" class="flex items-center gap-2 font-bold text-lg">
+          <UIcon name="i-lucide-code-2" class="text-primary size-5" />
+          <span>Evan Saleck</span>
         </NuxtLink>
-
-        <TemplateMenu />
       </template>
 
       <template #right>
+        <LanguageSwitcher />
         <UColorModeButton />
-
         <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
+          to="https://github.com/EvanSaleck"
           target="_blank"
           icon="i-simple-icons-github"
           aria-label="GitHub"
@@ -54,21 +59,27 @@ useSeoMeta({
       <NuxtPage />
     </UMain>
 
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
-
     <UFooter>
       <template #left>
         <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
+          {{ t('footer.built_with') }} • © {{ new Date().getFullYear() }} Evan Saleck. {{ t('footer.rights') }}
         </p>
       </template>
 
       <template #right>
         <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
+          to="https://github.com/EvanSaleck"
           target="_blank"
           icon="i-simple-icons-github"
           aria-label="GitHub"
+          color="neutral"
+          variant="ghost"
+        />
+        <UButton
+          to="https://linkedin.com"
+          target="_blank"
+          icon="i-simple-icons-linkedin"
+          aria-label="LinkedIn"
           color="neutral"
           variant="ghost"
         />
@@ -76,3 +87,4 @@ useSeoMeta({
     </UFooter>
   </UApp>
 </template>
+
