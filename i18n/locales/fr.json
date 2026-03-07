@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Evan Saleck",
+    "title": "Développeur Full-Stack",
+    "subtitle": "Je crée des expériences web performantes, accessibles et élégantes avec les technologies modernes.",
+    "cta_primary": "Voir mes projets",
+    "cta_secondary": "Me contacter"
+  },
+  "about": {
+    "page_title": "À propos de moi",
+    "page_description": "Apprenez-en plus sur mon parcours, mes compétences et mon expérience.",
+    "intro_title": "Qui suis-je",
+    "intro_text": "Je suis un développeur full-stack passionné par le code propre, les expériences utilisateur soignées et la résolution de problèmes complexes. Je me spécialise dans la création d'applications web modernes avec Vue, Nuxt et Node.js.",
+    "bio_title": "Mon parcours",
+    "bio_text": "Avec plusieurs années d'expérience professionnelle dans le développement web, j'ai travaillé dans divers secteurs – des startups aux grandes entreprises. Je me forme constamment et recherche toujours de nouveaux défis pour progresser en tant que développeur.",
+    "skills_title": "Compétences & Technologies",
+    "experience_title": "Expérience",
+    "experience": [
+      {
+        "role": "Développeur Full-Stack Senior",
+        "company": "Tech Corp",
+        "period": "2022 – Présent",
+        "description": "Direction de l'architecture front-end avec Nuxt 3 et développement d'APIs REST robustes avec Node.js."
+      },
+      {
+        "role": "Développeur Front-End",
+        "company": "Agence Créative",
+        "period": "2019 – 2022",
+        "description": "Développement d'applications web responsives et de composants UI interactifs pour divers clients."
+      },
+      {
+        "role": "Développeur Junior",
+        "company": "Studio Web",
+        "period": "2017 – 2019",
+        "description": "Création et maintenance de sites clients tout en apprenant les frameworks JavaScript modernes."
+      }
+    ],
+    "download_cv": "Télécharger le CV"
+  },
+  "projects": {
+    "page_title": "Mes Projets",
+    "page_description": "Une sélection de projets que j'ai réalisés et auxquels j'ai contribué.",
+    "all": "Tous",
+    "view_demo": "Démo en ligne",
+    "view_code": "Code source",
+    "items": [
+      {
+        "title": "Portfolio Nuxt",
+        "description": "Un portfolio personnel construit avec Nuxt 3, Nuxt UI et support i18n pour le contenu multilingue.",
+        "tags": ["Nuxt", "Nuxt UI", "TypeScript", "i18n"],
+        "demo": "https://github.com/EvanSaleck/Nuxt-Portfolio",
+        "repo": "https://github.com/EvanSaleck/Nuxt-Portfolio"
+      },
+      {
+        "title": "Plateforme E-Commerce",
+        "description": "Une solution e-commerce full-stack avec inventaire en temps réel, paiements Stripe et tableau de bord admin.",
+        "tags": ["Nuxt", "Node.js", "PostgreSQL", "Stripe"],
+        "demo": "#",
+        "repo": "#"
+      },
+      {
+        "title": "Application de Gestion de Tâches",
+        "description": "Un outil de gestion de tâches collaboratif avec tableaux drag-and-drop, mises à jour en temps réel et fonctionnalités d'équipe.",
+        "tags": ["Vue 3", "Pinia", "Socket.io", "Tailwind"],
+        "demo": "#",
+        "repo": "#"
+      },
+      {
+        "title": "Tableau de Bord Météo",
+        "description": "Un beau tableau de bord météo avec prévisions basées sur la localisation, graphiques interactifs et fonds animés.",
+        "tags": ["Nuxt", "Chart.js", "OpenWeather API"],
+        "demo": "#",
+        "repo": "#"
+      },
+      {
+        "title": "Plateforme de Blog",
+        "description": "Un blog piloté par le contenu avec support Markdown, catégories, recherche et flux RSS.",
+        "tags": ["Nuxt Content", "Markdown", "Tailwind"],
+        "demo": "#",
+        "repo": "#"
+      },
+      {
+        "title": "Boilerplate API REST",
+        "description": "Un starter Node.js API REST prêt pour la production avec auth JWT, limitation de débit et couverture de tests complète.",
+        "tags": ["Node.js", "Express", "JWT", "PostgreSQL"],
+        "demo": "#",
+        "repo": "#"
+      }
+    ]
+  },
+  "contact": {
+    "page_title": "Me Contacter",
+    "page_description": "Vous avez un projet en tête ou souhaitez simplement me saluer ? Je serais ravi d'avoir de vos nouvelles.",
+    "form_title": "Envoyez-moi un Message",
+    "name_label": "Votre Nom",
+    "name_placeholder": "Jean Dupont",
+    "email_label": "Adresse E-mail",
+    "email_placeholder": "jean{'@'}exemple.com",
+    "subject_label": "Sujet",
+    "subject_placeholder": "Demande de projet",
+    "message_label": "Message",
+    "message_placeholder": "Parlez-moi de votre projet...",
+    "submit": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success_title": "Message Envoyé !",
+    "success_text": "Merci de m'avoir contacté. Je vous répondrai dans les plus brefs délais.",
+    "error_text": "Une erreur s'est produite. Veuillez réessayer.",
+    "or_reach": "Ou contactez-moi directement",
+    "availability": "Actuellement disponible pour des missions freelance et des postes à temps plein."
+  },
+  "footer": {
+    "built_with": "Construit avec Nuxt & Nuxt UI",
+    "rights": "Tous droits réservés."
+  },
+  "seo": {
+    "title": "Evan Saleck – Développeur Full-Stack",
+    "description": "Portfolio personnel d'Evan Saleck, développeur full-stack spécialisé en Nuxt, Vue et Node.js.",
+    "about_title": "À propos – Evan Saleck",
+    "projects_title": "Projets – Evan Saleck",
+    "contact_title": "Contact – Evan Saleck"
+  }
+}
