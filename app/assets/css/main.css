@@ -16,3 +16,19 @@
   --color-green-900: #0A5331;
   --color-green-950: #052E16;
 }
+
+
+@layer base {
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-inherit;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#50a2ff] rounded-xl;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-violet-700;
+  }
+}

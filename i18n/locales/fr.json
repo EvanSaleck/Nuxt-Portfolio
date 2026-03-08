@@ -50,50 +50,10 @@
     "all": "Tous",
     "view_demo": "Démo en ligne",
     "view_code": "Code source",
-    "items": [
-      {
-        "title": "Portfolio Nuxt",
-        "description": "Un portfolio personnel construit avec Nuxt 3, Nuxt UI et support i18n pour le contenu multilingue.",
-        "tags": ["Nuxt", "Nuxt UI", "TypeScript", "i18n"],
-        "demo": "https://github.com/EvanSaleck/Nuxt-Portfolio",
-        "repo": "https://github.com/EvanSaleck/Nuxt-Portfolio"
-      },
-      {
-        "title": "Plateforme E-Commerce",
-        "description": "Une solution e-commerce full-stack avec inventaire en temps réel, paiements Stripe et tableau de bord admin.",
-        "tags": ["Nuxt", "Node.js", "PostgreSQL", "Stripe"],
-        "demo": "#",
-        "repo": "#"
-      },
-      {
-        "title": "Application de Gestion de Tâches",
-        "description": "Un outil de gestion de tâches collaboratif avec tableaux drag-and-drop, mises à jour en temps réel et fonctionnalités d'équipe.",
-        "tags": ["Vue 3", "Pinia", "Socket.io", "Tailwind"],
-        "demo": "#",
-        "repo": "#"
-      },
-      {
-        "title": "Tableau de Bord Météo",
-        "description": "Un beau tableau de bord météo avec prévisions basées sur la localisation, graphiques interactifs et fonds animés.",
-        "tags": ["Nuxt", "Chart.js", "OpenWeather API"],
-        "demo": "#",
-        "repo": "#"
-      },
-      {
-        "title": "Plateforme de Blog",
-        "description": "Un blog piloté par le contenu avec support Markdown, catégories, recherche et flux RSS.",
-        "tags": ["Nuxt Content", "Markdown", "Tailwind"],
-        "demo": "#",
-        "repo": "#"
-      },
-      {
-        "title": "Boilerplate API REST",
-        "description": "Un starter Node.js API REST prêt pour la production avec auth JWT, limitation de débit et couverture de tests complète.",
-        "tags": ["Node.js", "Express", "JWT", "PostgreSQL"],
-        "demo": "#",
-        "repo": "#"
-      }
-    ]
+    "apoc": {
+      "title": "Alheiz-Breizh",
+      "description": "Application de gestion des reservations"
+    }
   },
   "contact": {
     "page_title": "Me Contacter",

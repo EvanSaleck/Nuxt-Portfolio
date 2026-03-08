@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { NavigationMenuItem } from '@nuxt/ui'
+
 const { t, locale } = useI18n()
 
 useHead({
@@ -21,7 +23,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 })
 
-const navLinks = computed(() => [
+const navLinks = computed<NavigationMenuItem[]>(() => [
   { label: t('nav.home'), to: localePath('/') },
   { label: t('nav.about'), to: localePath('/about') },
   { label: t('nav.projects'), to: localePath('/projects') },
@@ -41,17 +43,12 @@ const localePath = useLocalePath()
         </NuxtLink>
       </template>
 
+    <UNavigationMenu :items="navLinks" />
       <template #right>
         <LanguageSwitcher />
         <UColorModeButton />
-        <UButton
-          to="https://github.com/EvanSaleck"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
+        <UButton to="https://github.com/EvanSaleck" target="_blank" icon="i-simple-icons-github" aria-label="GitHub"
+          color="neutral" variant="ghost" />
       </template>
     </UHeader>
 
