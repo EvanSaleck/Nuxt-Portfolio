@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 // Tu peux ajouter tes technos ici pour boucler dessus
 const skills = [
@@ -39,6 +39,18 @@ const skills = [
         <p class="text-muted text-lg mb-6 leading-relaxed">
           {{ t("about.intro_text") }}
         </p>
+        <UButton
+          :to="`/cv-${locale}.pdf`"
+          target="_blank"
+          color="primary"
+          variant="solid"
+          size="xl"
+          icon="i-lucide-download"
+          trailing-icon="i-lucide-arrow-right"
+          class="shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-shadow"
+        >
+          {{ t("about.download_cv") }}
+        </UButton>
       </div>
 
       <div>

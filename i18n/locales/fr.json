@@ -13,6 +13,17 @@
     "cta_primary": "Voir mes projets",
     "cta_secondary": "Me contacter"
   },
+  "projects": {
+    "page_title": "Mes Projets",
+    "page_description": "Une sélection de projets que j'ai réalisés et auxquels j'ai contribué.",
+    "all": "Tous",
+    "view_demo": "Démo en ligne",
+    "view_code": "Code source",
+    "apoc": {
+      "title": "Alheiz-Breizh",
+      "description": "Application de gestion des reservations"
+    }
+  },
   "about": {
     "page_title": "À mon propos",
     "page_description": "Apprenez-en plus sur moi et mes compétences.",
@@ -28,10 +39,10 @@
         "description": "Développement d'applications appliquées au secteur industriel lié au médical."
       }
     ],
-    "download_cv": "Télécharger le CV"
+    "download_cv": "Télécharger mon CV"
   },
-  "projects": {
-    "page_title": "Mes Projets",
+    "experience": {
+    "page_title": "Mon parcours & mes expériences",
     "page_description": "Une sélection de projets que j'ai réalisés et auxquels j'ai contribué.",
     "all": "Tous",
     "view_demo": "Démo en ligne",
@@ -67,7 +78,7 @@
   },
   "seo": {
     "title": "Evan Saleck – Développeur Full-Stack",
-    "description": "Portfolio personnel d'Evan Saleck, développeur full-stack spécialisé en Nuxt, Vue et Node.js.",
+    "description": "Portfolio personnel d'Evan Saleck, développeur full-stack ",
     "about_title": "À propos – Evan Saleck",
     "projects_title": "Projets – Evan Saleck",
     "contact_title": "Contact – Evan Saleck"

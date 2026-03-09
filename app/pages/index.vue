@@ -42,7 +42,7 @@ const skills = [
 
       <template #links>
         <UButton
-          :to="localePath('/projects')"
+          :to="localePath({ name: 'index', hash: '#projects' })"
           size="xl"
           trailing-icon="i-lucide-arrow-right"
         >
