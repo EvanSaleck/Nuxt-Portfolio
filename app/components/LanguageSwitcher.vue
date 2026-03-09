@@ -5,7 +5,7 @@ const availableLocales = computed(() =>
   locales.value.map(l => ({
     label: l.name,
     value: l.code,
-    onSelect: () => setLocale(l.code as 'en' | 'fr' | 'es')
+    onSelect: () => setLocale(l.code as 'en' | 'fr')
   }))
 )
 

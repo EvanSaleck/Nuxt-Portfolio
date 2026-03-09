@@ -29,6 +29,6 @@
     @apply bg-[#50a2ff] rounded-xl;
   }
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-violet-700;
+    @apply bg-[#50a2ff]/80;
   }
 }

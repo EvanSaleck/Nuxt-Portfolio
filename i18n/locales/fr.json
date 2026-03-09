@@ -14,32 +14,18 @@
     "cta_secondary": "Me contacter"
   },
   "about": {
-    "page_title": "À propos de moi",
-    "page_description": "Apprenez-en plus sur mon parcours, mes compétences et mon expérience.",
+    "page_title": "À mon propos",
+    "page_description": "Apprenez-en plus sur moi et mes compétences.",
     "intro_title": "Qui suis-je",
-    "intro_text": "Je suis un développeur full-stack passionné par le code propre, les expériences utilisateur soignées et la résolution de problèmes complexes. Je me spécialise dans la création d'applications web modernes avec Vue, Nuxt et Node.js.",
-    "bio_title": "Mon parcours",
-    "bio_text": "Avec plusieurs années d'expérience professionnelle dans le développement web, j'ai travaillé dans divers secteurs – des startups aux grandes entreprises. Je me forme constamment et recherche toujours de nouveaux défis pour progresser en tant que développeur.",
-    "skills_title": "Compétences & Technologies",
+    "intro_text": "Je suis un développeur full-stack passionné par le code propre, les expériences utilisateur soignées et la résolution de problèmes complexes. J'apprécie particulièrement relever les défis techniques et collaborer avec d'autres pour créer des solutions innovantes. De plus les langages bas niveaux sont pour moi particulièrement intéressants.",
+    "skills_text": "Vous pouvez retrouver une liste de mes compétences ci-dessous",
     "experience_title": "Expérience",
     "experience": [
       {
-        "role": "Développeur Full-Stack Senior",
-        "company": "Tech Corp",
-        "period": "2022 – Présent",
-        "description": "Direction de l'architecture front-end avec Nuxt 3 et développement d'APIs REST robustes avec Node.js."
-      },
-      {
-        "role": "Développeur Front-End",
-        "company": "Agence Créative",
-        "period": "2019 – 2022",
-        "description": "Développement d'applications web responsives et de composants UI interactifs pour divers clients."
-      },
-      {
-        "role": "Développeur Junior",
-        "company": "Studio Web",
-        "period": "2017 – 2019",
-        "description": "Création et maintenance de sites clients tout en apprenant les frameworks JavaScript modernes."
+        "role": "Alternance Développeur Full-Stack",
+        "company": "Cristalens Industrie",
+        "period": "2023 – Aujourd'hui",
+        "description": "Développement d'applications appliquées au secteur industriel lié au médical."
       }
     ],
     "download_cv": "Télécharger le CV"

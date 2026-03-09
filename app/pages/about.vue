@@ -63,7 +63,10 @@ const experience = computed(() => {
         <div class="flex justify-center">
           <div class="relative">
             <div class="size-64 rounded-2xl bg-primary/10 flex items-center justify-center">
-              <UIcon name="i-lucide-user" class="size-32 text-primary/50" />
+              <UIcon
+                name="i-lucide-user"
+                class="size-32 text-primary/50"
+              />
             </div>
             <div class="absolute -bottom-3 -right-3 bg-primary text-white rounded-xl px-4 py-2 text-sm font-semibold shadow-lg">
               7+ years exp
@@ -85,7 +88,10 @@ const experience = computed(() => {
           >
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2">
-                <UIcon :name="skill.icon" class="size-4 text-primary" />
+                <UIcon
+                  :name="skill.icon"
+                  class="size-4 text-primary"
+                />
                 <span class="font-medium text-sm">{{ skill.name }}</span>
               </div>
               <span class="text-muted text-xs">{{ skill.level }}%</span>
@@ -113,16 +119,27 @@ const experience = computed(() => {
           >
             <div class="flex flex-col items-center">
               <div class="size-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                <UIcon name="i-lucide-briefcase" class="size-4 text-primary" />
+                <UIcon
+                  name="i-lucide-briefcase"
+                  class="size-4 text-primary"
+                />
               </div>
-              <div v-if="index < experience.length - 1" class="w-px flex-1 bg-border mt-2" />
+              <div
+                v-if="index < experience.length - 1"
+                class="w-px flex-1 bg-border mt-2"
+              />
             </div>
             <div class="pb-8">
               <div class="flex flex-wrap items-center gap-2 mb-1">
                 <h3 class="font-semibold">
                   {{ exp.role }}
                 </h3>
-                <UBadge variant="subtle" size="sm">{{ exp.company }}</UBadge>
+                <UBadge
+                  variant="subtle"
+                  size="sm"
+                >
+                  {{ exp.company }}
+                </UBadge>
               </div>
               <p class="text-muted text-sm mb-2">
                 {{ exp.period }}

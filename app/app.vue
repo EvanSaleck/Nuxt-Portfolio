@@ -24,10 +24,26 @@ useSeoMeta({
 })
 
 const navLinks = computed<NavigationMenuItem[]>(() => [
-  { label: t('nav.home'), to: localePath('/') },
-  { label: t('nav.about'), to: localePath('/about') },
-  { label: t('nav.projects'), to: localePath('/projects') },
-  { label: t('nav.contact'), to: localePath('/contact') }
+  {
+    label: t('nav.home'),
+    to: localePath({ name: 'index', hash: '#home' }),
+    exactHash: true
+  },
+  {
+    label: t('nav.about'),
+    to: localePath({ name: 'index', hash: '#about' }),
+    exactHash: true
+  },
+  {
+    label: t('nav.projects'),
+    to: localePath({ name: 'index', hash: '#projects' }),
+    exactHash: true
+  },
+  {
+    label: t('nav.contact'),
+    to: localePath({ name: 'index', hash: '#contact' }),
+    exactHash: true
+  }
 ])
 
 const localePath = useLocalePath()
@@ -37,18 +53,31 @@ const localePath = useLocalePath()
   <UApp>
     <UHeader :links="navLinks">
       <template #left>
-        <NuxtLink :to="localePath('/')" class="flex items-center gap-2 font-bold text-lg">
-          <UIcon name="i-lucide-code-2" class="text-primary size-5" />
+        <NuxtLink
+          :to="localePath('/')"
+          class="flex items-center gap-2 font-bold text-lg"
+        >
+          <UIcon
+            name="i-lucide-code-2"
+            class="text-primary size-5"
+          />
           <span>Evan Saleck</span>
         </NuxtLink>
       </template>
 
-    <UNavigationMenu :items="navLinks" />
+      <UNavigationMenu :items="navLinks" />
+
       <template #right>
         <LanguageSwitcher />
         <UColorModeButton />
-        <UButton to="https://github.com/EvanSaleck" target="_blank" icon="i-simple-icons-github" aria-label="GitHub"
-          color="neutral" variant="ghost" />
+        <UButton
+          to="https://github.com/EvanSaleck"
+          target="_blank"
+          icon="i-simple-icons-github"
+          aria-label="GitHub"
+          color="neutral"
+          variant="ghost"
+        />
       </template>
     </UHeader>
 
@@ -84,4 +113,3 @@ const localePath = useLocalePath()
     </UFooter>
   </UApp>
 </template>
-

@@ -92,21 +92,37 @@ const contactLinks = [
               </h2>
             </template>
 
-            <Transition name="fade" mode="out-in">
-              <div v-if="status === 'success'" class="py-8 text-center space-y-3">
-                <UIcon name="i-lucide-check-circle-2" class="size-12 text-primary mx-auto" />
+            <Transition
+              name="fade"
+              mode="out-in"
+            >
+              <div
+                v-if="status === 'success'"
+                class="py-8 text-center space-y-3"
+              >
+                <UIcon
+                  name="i-lucide-check-circle-2"
+                  class="size-12 text-primary mx-auto"
+                />
                 <h3 class="font-semibold text-lg">
                   {{ t('contact.success_title') }}
                 </h3>
                 <p class="text-muted">
                   {{ t('contact.success_text') }}
                 </p>
-                <UButton variant="subtle" @click="status = 'idle'">
+                <UButton
+                  variant="subtle"
+                  @click="status = 'idle'"
+                >
                   Send another
                 </UButton>
               </div>
 
-              <form v-else class="space-y-5" @submit.prevent="onSubmit">
+              <form
+                v-else
+                class="space-y-5"
+                @submit.prevent="onSubmit"
+              >
                 <div class="grid sm:grid-cols-2 gap-5">
                   <UFormField :label="t('contact.name_label')">
                     <UInput
