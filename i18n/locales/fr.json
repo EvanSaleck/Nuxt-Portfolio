@@ -8,8 +8,8 @@
   "hero": {
     "greeting": "Bonjour, je suis",
     "name": "Evan Saleck",
-    "title": "Développeur Full-Stack",
-    "subtitle": "Je crée des expériences web performantes, accessibles et élégantes avec les technologies modernes.",
+    "title": "Alternant Développeur Full-Stack",
+    "subtitle": "Je crée des sites web performants, accessibles et élégants avec les technologies modernes et anciennes.",
     "cta_primary": "Voir mes projets",
     "cta_secondary": "Me contacter"
   },
@@ -74,35 +74,12 @@
       }
     ]
   },
-  "contact": {
-    "page_title": "Me Contacter",
-    "page_description": "Vous avez un projet en tête ou souhaitez simplement me saluer ? Je serais ravi d'avoir de vos nouvelles.",
-    "form_title": "Envoyez-moi un Message",
-    "name_label": "Votre Nom",
-    "name_placeholder": "Jean Dupont",
-    "email_label": "Adresse E-mail",
-    "email_placeholder": "jean{'@'}exemple.com",
-    "subject_label": "Sujet",
-    "subject_placeholder": "Demande de projet",
-    "message_label": "Message",
-    "message_placeholder": "Parlez-moi de votre projet...",
-    "submit": "Envoyer le message",
-    "sending": "Envoi en cours...",
-    "success_title": "Message Envoyé !",
-    "success_text": "Merci de m'avoir contacté. Je vous répondrai dans les plus brefs délais.",
-    "error_text": "Une erreur s'est produite. Veuillez réessayer.",
-    "or_reach": "Ou contactez-moi directement",
-    "availability": "Actuellement disponible pour des missions freelance et des postes à temps plein."
-  },
   "footer": {
     "built_with": "Construit avec Nuxt & Nuxt UI",
     "rights": "Tous droits réservés."
   },
   "seo": {
     "title": "Evan Saleck – Développeur Full-Stack",
-    "description": "Portfolio personnel d'Evan Saleck, développeur full-stack ",
-    "about_title": "À propos – Evan Saleck",
-    "projects_title": "Projets – Evan Saleck",
-    "contact_title": "Contact – Evan Saleck"
+    "description": "Portfolio personnel d'Evan Saleck, développeur full-stack "
   }
 }
