@@ -1,9 +1,9 @@
 {
   "nav": {
     "home": "Accueil",
-    "about": "À propos",
     "projects": "Projets",
-    "contact": "Contact"
+    "about": "À propos",
+    "experience": "Parcours & Expériences"
   },
   "hero": {
     "greeting": "Bonjour, je suis",
@@ -30,27 +30,49 @@
     "intro_title": "Qui suis-je",
     "intro_text": "Je suis un développeur full-stack passionné par le code propre, les expériences utilisateur soignées et la résolution de problèmes complexes. J'apprécie particulièrement relever les défis techniques et collaborer avec d'autres pour créer des solutions innovantes. De plus les langages bas niveaux sont pour moi particulièrement intéressants.",
     "skills_text": "Vous pouvez retrouver une liste de mes compétences ci-dessous",
-    "experience_title": "Expérience",
+    "download_cv": "Télécharger mon CV"
+  },
+  "experience": {
+    "page_title": "Mon parcours & mes expériences",
+    "page_description": "Mon parcours et mes expériences professionnelles dans le développement web.",
+    "studies_title": "Formation",
+    "experience_title": "Expériences Professionnelles",
+    "studies": [
+      {
+        "degree": "Baccalauréat STI2D",
+        "institution": "Lycée de l'Elorn",
+        "period": "2020 – 2022",
+        "description": "Formation en informatique avec une spécialisation en développement web et systèmes d'exploitation.",
+        "icon": "mdi-school",
+        "isOngoing": false
+      },
+      {
+        "degree": "BUT Informatique (Parcours Développement d'Applications)",
+        "institution": "IUT de Lannion",
+        "period": "2022 – 2025",
+        "description": "Formation approfondie en développement d'applications, gestion de projets informatiques et administration des systèmes.",
+        "icon": "mdi-school",
+        "isOngoing": false
+      },
+      {
+        "degree": "Ecole d'ingénieurs en informatique (en cours)",
+        "institution": "ENSSAT",
+        "period": "2025 – Aujourd'hui",
+        "description": "Spécialisation en conception, développement et test de logiciels avec une approche orientée projet. Formation en gestion de projet, travail en équipe et communication technique. (Option prévue : Cybersécurité)",
+        "icon": "mdi-school",
+        "isOngoing": true
+      }
+    ],
     "experience": [
       {
         "role": "Alternance Développeur Full-Stack",
         "company": "Cristalens Industrie",
         "period": "2023 – Aujourd'hui",
-        "description": "Développement d'applications appliquées au secteur industriel lié au médical."
+        "description": "Développement d'applications appliquées au secteur industriel lié au médical.",
+        "icon": "mdi-briefcase",
+        "isOngoing": true
       }
-    ],
-    "download_cv": "Télécharger mon CV"
-  },
-    "experience": {
-    "page_title": "Mon parcours & mes expériences",
-    "page_description": "Une sélection de projets que j'ai réalisés et auxquels j'ai contribué.",
-    "all": "Tous",
-    "view_demo": "Démo en ligne",
-    "view_code": "Code source",
-    "apoc": {
-      "title": "Alheiz-Breizh",
-      "description": "Application de gestion des reservations"
-    }
+    ]
   },
   "contact": {
     "page_title": "Me Contacter",
