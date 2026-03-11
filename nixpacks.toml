@@ -1,11 +1,9 @@
-[providers]
-# On dit explicitement à Nixpacks : "Ceci est un projet Node"
-node = true
+# On déclare le provider sous forme de liste (c'est ça qui bloquait !)
+providers = ["node"]
 
 [variables]
-# On force Node 22 via les variables d'environnement de Nixpacks
-NIXPACKS_NODE_VERSION = '22'
-# On lui dit d'utiliser npm
+# On force l'utilisation de Node 20 (version LTS ultra-stable) et npm
+NIXPACKS_NODE_VERSION = '20'
 NIXPACKS_PACKAGE_MANAGER = 'npm'
 
 [phases.install]
@@ -14,6 +12,5 @@ cmds = ['npm ci']
 [phases.build]
 cmds = ['npm run build']
 
-# La phase de démarrage DOIT s'appeler "start" (sans "phases.")
 [start]
 cmd = 'node .output/server/index.mjs'
