@@ -1,6 +1,12 @@
-[setup]
-# On force l'utilisation de Node 20 (ou 22) et npm
-pkgs = ['nodejs_22', 'npm']
+[providers]
+# On dit explicitement à Nixpacks : "Ceci est un projet Node"
+node = true
+
+[variables]
+# On force Node 22 via les variables d'environnement de Nixpacks
+NIXPACKS_NODE_VERSION = '22'
+# On lui dit d'utiliser npm
+NIXPACKS_PACKAGE_MANAGER = 'npm'
 
 [phases.install]
 cmds = ['npm ci']
@@ -8,5 +14,6 @@ cmds = ['npm ci']
 [phases.build]
 cmds = ['npm run build']
 
-[phases.start]
-cmds = ['node .output/server/index.mjs']
+# La phase de démarrage DOIT s'appeler "start" (sans "phases.")
+[start]
+cmd = 'node .output/server/index.mjs'
