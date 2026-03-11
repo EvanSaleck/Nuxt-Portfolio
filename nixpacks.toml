@@ -2,11 +2,17 @@ providers = ["node"]
 
 [variables]
 NIXPACKS_NODE_VERSION = '20'
-NIXPACKS_PACKAGE_MANAGER = 'npm'
+# On force l'architecture cible pour éviter le bug oxc-parser
+npm_config_platform = 'linux'
+npm_config_arch = 'x64'
 
 [phases.install]
-# On force la suppression du lockfile capricieux et on fait une installation fraîche spéciale Linux
-cmds = ['rm -f package-lock.json', 'npm install']
+# On efface le cache, les modules et le lockfile pour forcer une installation pure
+cmds = [
+    'rm -rf node_modules package-lock.json',
+    'npm cache clean --force',
+    'npm install --force'
+]
 
 [phases.build]
 cmds = ['npm run build']
