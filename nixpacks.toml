@@ -1,0 +1,12 @@
+[setup]
+# On force l'utilisation de Node 20 (ou 22) et npm
+pkgs = ['nodejs_22', 'npm']
+
+[phases.install]
+cmds = ['npm ci']
+
+[phases.build]
+cmds = ['npm run build']
+
+[phases.start]
+cmds = ['node .output/server/index.mjs']
