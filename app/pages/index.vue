@@ -64,11 +64,12 @@ const skills = [
           <div class="relative size-72">
             <div class="absolute inset-0 rounded-full bg-primary/10 animate-pulse" />
             <div class="absolute inset-4 rounded-full bg-primary/15 flex items-center justify-center">
-              <UAvatar
-                src="https://github.com/benjamincanac.png"
-                size="3xl"
+              <img
+                src="https://avatars.githubusercontent.com/u/79723542"
+                size="xl"
+                class="rounded-full border-4 border-primary/20 shadow-lg object-cover"
                 loading="lazy"
-              />
+              >
             </div>
           </div>
         </div>

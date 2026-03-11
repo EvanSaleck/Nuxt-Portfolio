@@ -7,7 +7,7 @@ const skills = [
   { name: 'TypeScript', icon: 'i-simple-icons-typescript' },
   { name: 'PHP / Symfony', icon: 'i-simple-icons-symfony' },
   { name: 'Robot Framework', icon: 'i-simple-icons-robotframework' },
-  { name: 'Langage C', icon: 'i-simple-icons-c' },
+  { name: 'C', icon: 'i-simple-icons-c' },
   { name: 'PostgreSQL', icon: 'i-simple-icons-postgresql' },
   { name: 'Docker', icon: 'i-simple-icons-docker' },
   { name: 'Tailwind CSS', icon: 'i-simple-icons-tailwindcss' },

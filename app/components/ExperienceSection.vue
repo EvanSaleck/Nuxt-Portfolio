@@ -89,7 +89,6 @@ const experiences = computed<TimelineItemType[]>(() => {
         <UTimeline
           color="primary"
           :items="experiences"
-          :default-value="0"
         />
       </div>
     </div>

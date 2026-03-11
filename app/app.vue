@@ -44,6 +44,7 @@ const navLinks = computed<NavigationMenuItem[]>(() => [
     to: localePath({ name: 'index', hash: '#projects' }),
     exactHash: true
   }
+
 ])
 
 const localePath = useLocalePath()

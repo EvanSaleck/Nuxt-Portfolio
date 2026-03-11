@@ -22,6 +22,26 @@
     "apoc": {
       "title": "Alheiz-Breizh",
       "description": "Application de gestion des reservations"
+    },
+    "cheval": {
+      "title": "Logiciel de gestion d'hôtels",
+      "description": "Logiciel permettant la gestion d'un hôtel, de la réservation à la facturation en passant par la gestion des chambres et du personnel."
+    },
+    "docker": {
+      "title": "Application appliquée à Docker pour extraire de la donnée et les afficher via un pdf",
+      "description": "Projet de test de Docker pour la création d'environnements de développement et de production isolés et reproductibles. L'application permet d'extraire des données d'une base de données, de les traiter et de les afficher dans un format PDF pour une analyse facile. "
+    },
+    "portfolio2": {
+      "title": "Portfolio V2",
+      "description": "Refonte complète de mon portfolio personnel en utilisant Next.js, TypeScript et TailwindCSS pour une expérience utilisateur améliorée et des performances optimisées."
+    },
+    "bot": {
+      "title": "Bot Discord de gestion de serveur",
+      "description": "Bot Discord développé en nodeJs utilisant la bibliothèque discordjs, conçu pour aider les administrateurs de serveurs à gérer les membres, modérer les discussions et automatiser les tâches courantes. (Projet en cours)"
+    },
+    "klory": {
+      "title": "Klory",
+      "description": "Application de gestion des calories et repas, offrant une interface intuitive pour suivre quotidiennement le status des calories consommées et dépensées. (Projet en cours)"
     }
   },
   "about": {

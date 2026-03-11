@@ -22,6 +22,26 @@
     "apoc": {
       "title": "Alheiz-Breizh",
       "description": "Reservation management application"
+    },
+    "cheval": {
+      "title": "Hotel Management Software",
+      "description": "Software for managing a hotel, from booking to billing, including room and staff management."
+    },
+    "docker": {
+      "title": "Docker-based application for data extraction and PDF generation",
+      "description": "Docker test project for creating isolated and reproducible development and production environments. The application extracts data from a database, processes it, and outputs it in PDF format for easy analysis."
+    },
+    "portfolio2": {
+      "title": "Portfolio V2",
+      "description": "Complete redesign of my personal portfolio using Next.js, TypeScript, and Tailwind CSS for an improved user experience and optimized performance."
+    },
+    "bot": {
+      "title": "Discord Server Management Bot",
+      "description": "Discord bot developed in Node.js using the discord.js library, designed to help server administrators manage members, moderate discussions, and automate common tasks. (Work in progress)"
+    },
+    "klory": {
+      "title": "Klory",
+      "description": "Calorie and meal management application offering an intuitive interface to track daily calories consumed and burned. (Work in progress)"
     }
   },
   "about": {

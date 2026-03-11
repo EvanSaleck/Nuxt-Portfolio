@@ -16,40 +16,39 @@ const projects = computed<Project[]>(() => [
     description: t('projects.apoc.description'),
     stack: ['HTML', 'SCSS', 'PHP/Symfony', 'JS', 'C'],
     icon: 'apoc.webp',
-    github: 'https://github.com/EvanSaleck/APOC-AlHaIZ-Breizh',
-    web: 'google.com'
+    github: 'https://github.com/EvanSaleck/APOC-AlHaIZ-Breizh'
   },
   {
-    title: t('projects.apoc.title'),
-    description: t('projects.apoc.description'),
-    stack: ['HTML', 'SCSS', 'PHP/Symfony', 'JS', 'C'],
-    icon: 'apoc.webp',
-    github: 'https://github.com/EvanSaleck/APOC-AlHaIZ-Breizh',
-    web: 'google.com'
+    title: t('projects.klory.title'),
+    description: t('projects.klory.description'),
+    stack: ['React', 'Express', 'DrizzleORM', 'PostgreSQL', 'Docker', 'TypeScript', 'TailwindCSS'],
+    github: 'https://github.com/EvanSaleck/Klory'
   },
   {
-    title: t('projects.apoc.title'),
-    description: t('projects.apoc.description'),
-    stack: ['HTML', 'SCSS', 'PHP/Symfony', 'JS', 'C'],
-    icon: 'apoc.webp',
-    github: 'https://github.com/EvanSaleck/APOC-AlHaIZ-Breizh',
-    web: 'google.com'
+    title: t('projects.bot.title'),
+    description: t('projects.bot.description'),
+    stack: ['NodeJs', 'Javascript', 'Discord.js'],
+    github: 'https://github.com/EvanSaleck/MiniBotito'
   },
   {
-    title: t('projects.apoc.title'),
-    description: t('projects.apoc.description'),
-    stack: ['HTML', 'SCSS', 'PHP/Symfony', 'JS', 'C'],
-    icon: 'apoc.webp',
-    github: 'https://github.com/EvanSaleck/APOC-AlHaIZ-Breizh',
-    web: 'google.com'
+    title: t('projects.portfolio2.title'),
+    description: t('projects.portfolio2.description'),
+    stack: ['Nextjs', 'TypeScript', 'TailwindCSS'],
+    github: 'https://github.com/EvanSaleck/portfolio_v2',
+    web: 'https://portfoliov2-ruddy.vercel.app/'
   },
   {
-    title: t('projects.apoc.title'),
-    description: t('projects.apoc.description'),
-    stack: ['HTML', 'SCSS', 'PHP/Symfony', 'JS', 'C'],
-    icon: 'apoc.webp',
-    github: 'https://github.com/EvanSaleck/APOC-AlHaIZ-Breizh',
-    web: 'google.com'
+    title: t('projects.docker.title'),
+    description: t('projects.docker.description'),
+    stack: ['Docker'],
+    github: 'https://github.com/EvanSaleck/SAE-1.03'
+  },
+  {
+    title: t('projects.cheval.title'),
+    description: t('projects.cheval.description'),
+    stack: ['Java', 'JavaFX', 'Maven'],
+    icon: 'imgcheval.png',
+    github: 'https://github.com/EvanSaleck/Sae201'
   }
 ])
 </script>
@@ -71,7 +70,7 @@ const projects = computed<Project[]>(() => [
       <UCard
         v-for="project in projects"
         :key="project.title"
-        class="flex flex-col group transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
+        class="flex flex-col group transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg h-fit"
       >
         <template #header>
           <div class="flex items-center gap-3">
