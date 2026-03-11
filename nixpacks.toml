@@ -1,13 +1,12 @@
-# On déclare le provider sous forme de liste (c'est ça qui bloquait !)
 providers = ["node"]
 
 [variables]
-# On force l'utilisation de Node 20 (version LTS ultra-stable) et npm
 NIXPACKS_NODE_VERSION = '20'
 NIXPACKS_PACKAGE_MANAGER = 'npm'
 
 [phases.install]
-cmds = ['npm ci']
+# On force la suppression du lockfile capricieux et on fait une installation fraîche spéciale Linux
+cmds = ['rm -f package-lock.json', 'npm install']
 
 [phases.build]
 cmds = ['npm run build']
