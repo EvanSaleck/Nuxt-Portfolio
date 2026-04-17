@@ -9,7 +9,7 @@
     "greeting": "Hi, I'm",
     "name": "Evan Saleck",
     "title": "Full-Stack Developer Apprentice",
-    "subtitle": "I create performant, accessible, and elegant websites with modern and low-level technologies.",
+    "subtitle": "I create high performance, accessible, and elegant websites with modern and low-level technologies.",
     "cta_primary": "View my projects",
     "cta_secondary": "Get in touch"
   },
@@ -41,7 +41,7 @@
     },
     "klory": {
       "title": "Klory",
-      "description": "Calorie and meal management application offering an intuitive interface to track daily calories consumed and burned. (Work in progress)"
+      "description": "Calory and meal management application offering an intuitive interface to track daily calories consumed and burned. (Work in progress)"
     }
   },
   "about": {

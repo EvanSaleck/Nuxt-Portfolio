@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
 
+const isMenuOpen = ref(false)
+
+
 const { t, locale } = useI18n()
 
 useHead({
@@ -52,65 +55,30 @@ const localePath = useLocalePath()
 
 <template>
   <UApp>
-    <UHeader :links="navLinks">
+    <UHeader title="Evan Saleck">
       <template #left>
-        <NuxtLink
-          :to="localePath('/')"
-          class="flex items-center gap-2 font-bold text-lg"
-        >
-          <UIcon
-            name="i-lucide-code-2"
-            class="text-primary size-5"
-          />
+        <NuxtLink :to="localePath('/')" class="flex items-center gap-2 font-bold text-lg">
+          <UIcon name="i-lucide-code-2" class="text-primary size-5" />
           <span>Evan Saleck</span>
         </NuxtLink>
       </template>
 
-      <UNavigationMenu :items="navLinks" />
+      <UNavigationMenu :items="navLinks" class="hidden lg:flex" />
 
       <template #right>
         <LanguageSwitcher />
         <UColorModeButton />
-        <UButton
-          to="https://github.com/EvanSaleck"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
+      </template>
+
+      <template #body>
+        <div class="p-4">
+          <UNavigationMenu :items="navLinks" orientation="vertical" />
+        </div>
       </template>
     </UHeader>
 
     <UMain>
       <NuxtPage />
     </UMain>
-
-    <UFooter>
-      <template #left>
-        <p class="text-sm text-muted">
-          {{ t('footer.built_with') }} • © {{ new Date().getFullYear() }} Evan Saleck. {{ t('footer.rights') }}
-        </p>
-      </template>
-
-      <template #right>
-        <UButton
-          to="https://github.com/EvanSaleck"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
-        <UButton
-          to="https://linkedin.com"
-          target="_blank"
-          icon="i-simple-icons-linkedin"
-          aria-label="LinkedIn"
-          color="neutral"
-          variant="ghost"
-        />
-      </template>
-    </UFooter>
   </UApp>
 </template>
