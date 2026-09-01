@@ -33,13 +33,13 @@ const navLinks = computed<NavigationMenuItem[]>(() => [
     exactHash: true
   },
   {
-    label: t('nav.about'),
-    to: localePath({ name: 'index', hash: '#about' }),
+    label: t('nav.projects'),
+    to: localePath({ name: 'index', hash: '#projects' }),
     exactHash: true
   },
   {
-    label: t('nav.projects'),
-    to: localePath({ name: 'index', hash: '#projects' }),
+    label: t('nav.about'),
+    to: localePath({ name: 'index', hash: '#about' }),
     exactHash: true
   },
   {
