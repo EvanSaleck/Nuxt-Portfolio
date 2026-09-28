@@ -14,8 +14,7 @@ const projects = computed<Project[]>(() => [
   {
     title: t('projects.bb4c.title'),
     description: t('projects.bb4c.description'),
-    stack: ['C++', 'CAN Protocol', 'ESP32', 'JS', 'C'],
-    icon: 'bb4c.webp',
+    stack: ['C++', 'CAN Protocol', 'ESP32', 'C'],
     github: 'https://github.com/EvanSaleck/BBC-project'
   },
   {
