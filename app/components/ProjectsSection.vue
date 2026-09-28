@@ -12,6 +12,13 @@ interface Project {
 
 const projects = computed<Project[]>(() => [
   {
+    title: t('projects.bb4c.title'),
+    description: t('projects.bb4c.description'),
+    stack: ['C++', 'CAN Protocol', 'ESP32', 'JS', 'C'],
+    icon: 'bb4c.webp',
+    github: 'https://github.com/EvanSaleck/BBC-project'
+  },
+  {
     title: t('projects.apoc.title'),
     description: t('projects.apoc.description'),
     stack: ['HTML', 'SCSS', 'PHP/Symfony', 'JS', 'C'],

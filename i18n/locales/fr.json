@@ -42,6 +42,10 @@
     "klory": {
       "title": "Klory",
       "description": "Application de gestion des calories et repas, offrant une interface intuitive pour suivre quotidiennement le status des calories consommées et dépensées. (Projet en cours)"
+    },
+    "bb4c": {
+      "title": "Projet de boîte noire appliqué aux véhicules (Auto-moto)",
+      "description": "Conception et développement d'un système intelligent combinant une architecture hardware (ESP32) et des algorithmes de traitement de données (analyse de flux CAN / capteurs) pour détecter en temps réel les collisions et les situations d'accrochage. Actuellement en cours de développement des algorithmes de calibration des signaux."
     }
   },
   "about": {
