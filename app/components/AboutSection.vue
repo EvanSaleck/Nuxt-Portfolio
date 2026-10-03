@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
+const cvLocale = computed(() => locale.value.split('-')[0])
 
 // Tu peux ajouter tes technos ici pour boucler dessus
 const skills = [
@@ -40,7 +41,7 @@ const skills = [
           {{ t("about.intro_text") }}
         </p>
         <UButton
-          :to="`/cv-${locale}.pdf`"
+          :to="`/cv-${cvLocale}.pdf`"
           target="_blank"
           color="primary"
           variant="solid"
