@@ -1,5 +1,5 @@
 # 1. Étape de construction (Environnement 100% Linux propre)
-FROM node:20-slim AS builder
+FROM node:lts-krypton AS builder
 
 WORKDIR /app
 
@@ -16,7 +16,7 @@ COPY . .
 RUN npm run build
 
 # 2. Étape de production (On garde juste le strict minimum pour un serveur ultra-léger)
-FROM node:20-slim AS runner
+FROM node:lts-krypton AS runner
 
 WORKDIR /app
 
